@@ -51,6 +51,18 @@ class Linkedlist{
         }
         console.log(a.join(","))
     }
+    reverse(){
+        let prev=null
+        let curr=this.head
+        console.log(curr)
+        while(curr){
+            let next=curr.next
+            curr.next=prev
+            prev=curr
+            curr=next
+        }
+        this.head=prev
+    }
 }
 
 let list=new Linkedlist()
@@ -59,4 +71,6 @@ list.append(2)
 list.append(3)
 list.prepend(0)
 list.append(1)
+list.print()
+list.reverse()
 list.print()
