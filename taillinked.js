@@ -59,8 +59,8 @@ sizes(){
 }
 
 let list=new Linkedlist()
-list.prepend(1)
-list.prepend(2)
+
+
 list.append(4)
 list.append(5)
 console.log(list.sizes())
